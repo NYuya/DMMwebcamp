@@ -1,0 +1,34 @@
+
+ /* ブラウザがそれぞれ持っているCSSをリセットするため */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+a {
+  text-decoration: none;
+}
+
+/* clearfixを追加 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.position {
+  position: absolute; /* .headerの左上を基準に絶対位置で指定する */
+  top: 100px; /* .headerの左上から22px下側へ移動する */
+  right: 40px; /* .headerの左上から22px左側へ移動する */
+}
+.position i {
+  font-size: 32px;
+ /* display: inline-block;
+  margin-left: 20px;
+
+  */
+}
+
+
